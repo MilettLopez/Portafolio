@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio | Desarrolladora Front-End</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-link navbar-brand fw-bold" href="#">&lt;Portafolio /&gt;</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre mí</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SOBRE MÍ / HERO SECTION -->
+    <section id="sobre-mi" class="hero-section text-center text-lg-start">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <span class="badge bg-primary px-3 py-2 mb-3 fs-6">Desarrolladora Front-End</span>
+                    <h1 class="display-4 fw-bold mb-3">¡Hola! Soy Tu Nombre</h1>
+                    <p class="lead mb-4 text-light opacity-75">
+                        Apasionada por crear interfaces funcionales, responsivas y visualmente atractivas. Me especializo en transformar ideas y diseños en sitios web limpios mediante HTML5, CSS3, JavaScript y Bootstrap, utilizando control de versiones con Git y metodologías ágiles.
+                    </p>
+                    <div class="d-flex gap-3 justify-content-center justify-content-lg-start">
+                        <a href="#proyectos" class="btn btn-primary btn-lg"><i class="bi bi-briefcase-fill me-2"></i>Ver Proyectos</a>
+                        <a href="#contacto" class="btn btn-outline-light btn-lg"><i class="bi bi-envelope-fill me-2"></i>Contacto</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HABILIDADES / TECH STACK -->
+    <section id="habilidades" class="py-5 bg-white">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">Habilidades Técnicas</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 p-3 shadow-sm border-0 text-center">
+                        <div class="card-body">
+                            <i class="bi bi-code-slash text-primary display-5 mb-3"></i>
+                            <h5 class="card-title fw-bold">Front-End</h5>
+                            <p class="card-text text-muted">HTML5, CSS3, JavaScript (ES6+), Bootstrap 5, Diseño Responsivo.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 p-3 shadow-sm border-0 text-center">
+                        <div class="card-body">
+                            <i class="bi bi-git text-danger display-5 mb-3"></i>
+                            <h5 class="card-title fw-bold">Herramientas & Git</h5>
+                            <p class="card-text text-muted">Git, GitHub, GitHub Pages, VS Code.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 p-3 shadow-sm border-0 text-center">
+                        <div class="card-body">
+                            <i class="bi bi-kanban text-warning display-5 mb-3"></i>
+                            <h5 class="card-title fw-bold">Gestión & Metodologías</h5>
+                            <p class="card-text text-muted">Jira (Agile/Scrum), Microsoft Excel.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section id="proyectos" class="py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">Proyectos Destacados</h2>
+            <div class="row g-4">
+                
+                <!-- PROYECTO 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm card-project">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">Plataforma E-Commerce</h5>
+                            <p class="card-text text-muted flex-grow-1">
+                                Interfaz web interactiva para la exhibición y venta de artículos deportivos. Incluye un catálogo responsivo, navegación por categorías y maquetación fluida.
+                            </p>
+                            <div class="mb-3">
+                                <span class="badge badge-tech">HTML5</span>
+                                <span class="badge badge-tech">Bootstrap 5</span>
+                                <span class="badge badge-tech">JavaScript</span>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <a href="#" target="_blank" class="btn btn-sm btn-outline-dark w-100"><i class="bi bi-github me-1"></i>Código</a>
+                                <a href="#" target="_blank" class="btn btn-sm btn-primary w-100"><i class="bi bi-box-arrow-up-right me-1"></i>Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROYECTO 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm card-project">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">Portal de Adopción y Rescate</h5>
+                            <p class="card-text text-muted flex-grow-1">
+                                Maquetación web enfocada en la gestión de adopciones de mascotas. Cuenta con módulos informativos sobre requisitos y secciones de apoyo a la comunidad.
+                            </p>
+                            <div class="mb-3">
+                                <span class="badge badge-tech">HTML5</span>
+                                <span class="badge badge-tech">Bootstrap 5</span>
+                                <span class="badge badge-tech">CSS3</span>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <a href="#" target="_blank" class="btn btn-sm btn-outline-dark w-100"><i class="bi bi-github me-1"></i>Código</a>
+                                <a href="#" target="_blank" class="btn btn-sm btn-primary w-100"><i class="bi bi-box-arrow-up-right me-1"></i>Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROYECTO 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm card-project">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">Aplicación Web Interactiva</h5>
+                            <p class="card-text text-muted flex-grow-1">
+                                Herramienta interactiva con manejo de lógica en JavaScript para procesamiento y validación de datos ingresados por el usuario.
+                            </p>
+                            <div class="mb-3">
+                                <span class="badge badge-tech">JavaScript</span>
+                                <span class="badge badge-tech">HTML5</span>
+                                <span class="badge badge-tech">Bootstrap</span>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <a href="#" target="_blank" class="btn btn-sm btn-outline-dark w-100"><i class="bi bi-github me-1"></i>Código</a>
+                                <a href="#" target="_blank" class="btn btn-sm btn-primary w-100"><i class="bi bi-box-arrow-up-right me-1"></i>Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO Y FOOTER -->
+    <footer id="contacto" class="bg-dark text-white py-5">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-3">¿Hablamos?</h2>
+            <p class="text-light opacity-75 mb-4">Estoy disponible para nuevas oportunidades y colaboraciones en desarrollo Front-End.</p>
+            <div class="d-flex justify-content-center gap-3 mb-4">
+                <a href="mailto:tu-email@correo.com" class="btn btn-outline-light"><i class="bi bi-envelope me-2"></i>Email</a>
+                <a href="https://linkedin.com/in/tu-perfil" target="_blank" class="btn btn-outline-light"><i class="bi bi-linkedin me-2"></i>LinkedIn</a>
+                <a href="https://github.com/tu-usuario" target="_blank" class="btn btn-outline-light"><i class="bi bi-github me-2"></i>GitHub</a>
+            </div>
+            <hr class="border-secondary my-4">
+            <p class="small text-muted mb-0">&copy; 2026 Tu Nombre. Desarrollado con Bootstrap 5.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
