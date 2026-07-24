@@ -1,0 +1,25 @@
+
+        /* Estilos personalizados para toques estéticos */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+        }
+        .hero-section {
+            padding: 100px 0 80px 0;
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+            color: white;
+        }
+        .badge-tech {
+            background-color: #e2e8f0;
+            color: #334155;
+            font-weight: 500;
+        }
+        .card-project {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            border: none;
+        }
+        .card-project:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+        }
+ 
