@@ -112,6 +112,7 @@ h1, h2, h3, .serif-font {
 footer {
     background-color: #e5dac1;
 }
+
 /* --- Ajustes de Scroll y Hero Centrado --- */
 html {
     scroll-behavior: smooth;
@@ -127,4 +128,39 @@ html {
 
 .text-accent {
     color: var(--accent-main) !important;
+}
+
+/* --- Foto de fondo centrada y desvanecida --- */
+.hero-with-bg {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.hero-with-bg::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 65%;
+    height: 85%;
+    
+    background-image: url('../assets/foto-perfil.jpeg'); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    
+    opacity: 0.25;
+    
+    -webkit-mask-image: radial-gradient(circle, rgba(0,0,0,1) 30%, rgba(0,0,0,0) 75%);
+    mask-image: radial-gradient(circle, rgba(0,0,0,1) 30%, rgba(0,0,0,0) 75%);
+    
+    z-index: -1;
+    pointer-events: none;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
 }
