@@ -3,178 +3,173 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio | Desarrolladora Front-End</title>
-    <!-- Bootstrap CSS CDN -->
+    <title>Portafolio | Desarrollo & Tecnología</title>
+    
+    <!-- Google Fonts: Playfair Display + Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap 5 CSS CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Archivo CSS externo -->
+    <link rel="stylesheet" href="CSS/styles.css">
+
 </head>
 <body>
 
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
+    <nav class="navbar navbar-expand-lg fixed-top py-3">
         <div class="container">
-            <a class="navbar-link navbar-brand fw-bold" href="#">&lt;Portafolio /&gt;</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
+            <a class="navbar-brand serif-font text-gold fs-4" href="#">Zuly.</a>
+            <button class="navbar-toggler border-0 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="bi bi-list fs-2 text-gold"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav ms-auto gap-3">
                     <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre mí</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
                     <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Habilidades</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- SOBRE MÍ / HERO SECTION -->
-    <section id="sobre-mi" class="hero-section text-center text-lg-start">
+    <!-- HERO SECTION -->
+    <section id="sobre-mi" class="hero-section">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-8">
-                    <span class="badge bg-primary px-3 py-2 mb-3 fs-6">Desarrolladora Front-End</span>
-                    <h1 class="display-4 fw-bold mb-3">¡Hola! Soy Tu Nombre</h1>
-                    <p class="lead mb-4 text-light opacity-75">
-                        Apasionada por crear interfaces funcionales, responsivas y visualmente atractivas. Me especializo en transformar ideas y diseños en sitios web limpios mediante HTML5, CSS3, JavaScript y Bootstrap, utilizando control de versiones con Git y metodologías ágiles.
+            <div class="row align-items-center min-vh-50">
+                <div class="col-lg-10">
+                    <span class="fancy-badge mb-4">Software & Technology</span>
+                    <h1 class="display-3 fw-normal mb-4">
+                        Creando soluciones integrales con un enfoque <span class="fst-italic text-gold">analítico</span> y funcional.
+                    </h1>
+                    <p class="lead text-secondary mb-5 pe-lg-5 fw-light" style="max-width: 750px;">
+                        ¡Hola! Soy Desarrolladora apasionada por la resolución de problemas y la creación de soluciones tecnológicas integrales. Cuento con experiencia en maquetación e interfaces web (HTML, Bootstrap, JavaScript), lógica de programación en Java y gestión de proyectos bajo metodologías ágiles en Jira. Me motiva comprender el ciclo de vida del software en su totalidad, desde la experiencia de usuario hasta la organización técnica y el control de versiones con Git.
                     </p>
-                    <div class="d-flex gap-3 justify-content-center justify-content-lg-start">
-                        <a href="#proyectos" class="btn btn-primary btn-lg"><i class="bi bi-briefcase-fill me-2"></i>Ver Proyectos</a>
-                        <a href="#contacto" class="btn btn-outline-light btn-lg"><i class="bi bi-envelope-fill me-2"></i>Contacto</a>
+                    <div class="d-flex gap-3">
+                        <a href="#proyectos" class="btn btn-gold">Ver Proyectos</a>
+                        <a href="#contacto" class="btn btn-outline-light px-4 py-2 opacity-75 fs-6" style="border-radius: 4px;">Contacto</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- HABILIDADES / TECH STACK -->
-    <section id="habilidades" class="py-5 bg-white">
-        <div class="container">
-            <h2 class="text-center fw-bold mb-5">Habilidades Técnicas</h2>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="card h-100 p-3 shadow-sm border-0 text-center">
-                        <div class="card-body">
-                            <i class="bi bi-code-slash text-primary display-5 mb-3"></i>
-                            <h5 class="card-title fw-bold">Front-End</h5>
-                            <p class="card-text text-muted">HTML5, CSS3, JavaScript (ES6+), Bootstrap 5, Diseño Responsivo.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card h-100 p-3 shadow-sm border-0 text-center">
-                        <div class="card-body">
-                            <i class="bi bi-git text-danger display-5 mb-3"></i>
-                            <h5 class="card-title fw-bold">Herramientas & Git</h5>
-                            <p class="card-text text-muted">Git, GitHub, GitHub Pages, VS Code.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card h-100 p-3 shadow-sm border-0 text-center">
-                        <div class="card-body">
-                            <i class="bi bi-kanban text-warning display-5 mb-3"></i>
-                            <h5 class="card-title fw-bold">Gestión & Metodologías</h5>
-                            <p class="card-text text-muted">Jira (Agile/Scrum), Microsoft Excel.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <div class="container"><div class="divider-line"></div></div>
 
     <!-- PROYECTOS -->
     <section id="proyectos" class="py-5">
         <div class="container">
-            <h2 class="text-center fw-bold mb-5">Proyectos Destacados</h2>
+            <div class="d-flex justify-content-between align-items-end mb-5">
+                <div>
+                    <span class="text-gold text-uppercase tracking-wider small">Portafolio</span>
+                    <h2 class="display-5 fw-normal mt-2">Proyectos & Prácticas</h2>
+                </div>
+            </div>
+
             <div class="row g-4">
-                
                 <!-- PROYECTO 1 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 shadow-sm card-project">
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title fw-bold">Plataforma E-Commerce</h5>
-                            <p class="card-text text-muted flex-grow-1">
-                                Interfaz web interactiva para la exhibición y venta de artículos deportivos. Incluye un catálogo responsivo, navegación por categorías y maquetación fluida.
+                <div class="col-lg-6">
+                    <div class="project-card h-100 d-flex flex-column justify-content-between">
+                        <div>
+                            <div class="mb-4">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">BOOTSTRAP 5</span>
+                                <span class="tech-tag">JAVASCRIPT</span>
+                            </div>
+                            <h3 class="h2 mb-3 fw-normal">Plataforma E-Commerce</h3>
+                            <p class="text-secondary fw-light mb-4">
+                                Interfaz web interactiva diseñada para la exhibición y venta de catálogo. Enfoque en navegación ágil, estética limpia y experiencia de usuario fluida.
                             </p>
-                            <div class="mb-3">
-                                <span class="badge badge-tech">HTML5</span>
-                                <span class="badge badge-tech">Bootstrap 5</span>
-                                <span class="badge badge-tech">JavaScript</span>
-                            </div>
-                            <div class="d-flex gap-2">
-                                <a href="#" target="_blank" class="btn btn-sm btn-outline-dark w-100"><i class="bi bi-github me-1"></i>Código</a>
-                                <a href="#" target="_blank" class="btn btn-sm btn-primary w-100"><i class="bi bi-box-arrow-up-right me-1"></i>Demo</a>
-                            </div>
+                        </div>
+                        <div class="d-flex gap-3 pt-3 border-top border-secondary border-opacity-10">
+                            <a href="#" target="_blank" class="text-gold text-decoration-none small text-uppercase">Código en GitHub <i class="bi bi-arrow-up-right ms-1"></i></a>
+                            <a href="#" target="_blank" class="text-white text-decoration-none small text-uppercase opacity-75 ms-3">Ver Demo <i class="bi bi-arrow-up-right ms-1"></i></a>
                         </div>
                     </div>
                 </div>
 
                 <!-- PROYECTO 2 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 shadow-sm card-project">
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title fw-bold">Portal de Adopción y Rescate</h5>
-                            <p class="card-text text-muted flex-grow-1">
-                                Maquetación web enfocada en la gestión de adopciones de mascotas. Cuenta con módulos informativos sobre requisitos y secciones de apoyo a la comunidad.
+                <div class="col-lg-6">
+                    <div class="project-card h-100 d-flex flex-column justify-content-between">
+                        <div>
+                            <div class="mb-4">
+                                <span class="tech-tag">JAVA</span>
+                                <span class="tech-tag">LOGIC & POO</span>
+                                <span class="tech-tag">GIT</span>
+                            </div>
+                            <h3 class="h2 mb-3 fw-normal">Lógica & Aplicación Java</h3>
+                            <p class="text-secondary fw-light mb-4">
+                                Desarrollo de estructuras de control, solución de algoritmos y programación orientada a objetos para la gestión eficiente de datos.
                             </p>
-                            <div class="mb-3">
-                                <span class="badge badge-tech">HTML5</span>
-                                <span class="badge badge-tech">Bootstrap 5</span>
-                                <span class="badge badge-tech">CSS3</span>
-                            </div>
-                            <div class="d-flex gap-2">
-                                <a href="#" target="_blank" class="btn btn-sm btn-outline-dark w-100"><i class="bi bi-github me-1"></i>Código</a>
-                                <a href="#" target="_blank" class="btn btn-sm btn-primary w-100"><i class="bi bi-box-arrow-up-right me-1"></i>Demo</a>
-                            </div>
+                        </div>
+                        <div class="d-flex gap-3 pt-3 border-top border-secondary border-opacity-10">
+                            <a href="#" target="_blank" class="text-gold text-decoration-none small text-uppercase">Código en GitHub <i class="bi bi-arrow-up-right ms-1"></i></a>
                         </div>
                     </div>
                 </div>
-
-                <!-- PROYECTO 3 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 shadow-sm card-project">
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title fw-bold">Aplicación Web Interactiva</h5>
-                            <p class="card-text text-muted flex-grow-1">
-                                Herramienta interactiva con manejo de lógica en JavaScript para procesamiento y validación de datos ingresados por el usuario.
-                            </p>
-                            <div class="mb-3">
-                                <span class="badge badge-tech">JavaScript</span>
-                                <span class="badge badge-tech">HTML5</span>
-                                <span class="badge badge-tech">Bootstrap</span>
-                            </div>
-                            <div class="d-flex gap-2">
-                                <a href="#" target="_blank" class="btn btn-sm btn-outline-dark w-100"><i class="bi bi-github me-1"></i>Código</a>
-                                <a href="#" target="_blank" class="btn btn-sm btn-primary w-100"><i class="bi bi-box-arrow-up-right me-1"></i>Demo</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </div>
     </section>
 
-    <!-- CONTACTO Y FOOTER -->
-    <footer id="contacto" class="bg-dark text-white py-5">
-        <div class="container text-center">
-            <h2 class="fw-bold mb-3">¿Hablamos?</h2>
-            <p class="text-light opacity-75 mb-4">Estoy disponible para nuevas oportunidades y colaboraciones en desarrollo Front-End.</p>
-            <div class="d-flex justify-content-center gap-3 mb-4">
-                <a href="mailto:tu-email@correo.com" class="btn btn-outline-light"><i class="bi bi-envelope me-2"></i>Email</a>
-                <a href="https://linkedin.com/in/tu-perfil" target="_blank" class="btn btn-outline-light"><i class="bi bi-linkedin me-2"></i>LinkedIn</a>
-                <a href="https://github.com/tu-usuario" target="_blank" class="btn btn-outline-light"><i class="bi bi-github me-2"></i>GitHub</a>
+    <div class="container"><div class="divider-line"></div></div>
+
+    <!-- HABILIDADES -->
+    <section id="skills" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <span class="text-gold text-uppercase tracking-wider small">Competencias</span>
+                    <h2 class="display-6 fw-normal mt-2">Tecnologías & Herramientas</h2>
+                </div>
+                <div class="col-lg-8">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <h4 class="serif-font text-gold mb-3">Desarrollo Web & Lógica</h4>
+                            <p class="text-secondary fw-light">HTML5, CSS3, JavaScript (ES6+), Bootstrap 5, Java (POO & lógica).</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h4 class="serif-font text-gold mb-3">Control de Versiones</h4>
+                            <p class="text-secondary fw-light">Git, GitHub, GitHub Pages, gestión de ramas y repositorios.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h4 class="serif-font text-gold mb-3">Gestión de Proyectos & Ágil</h4>
+                            <p class="text-secondary fw-light">Jira (Scrum/Agile), gestión de historias de usuario, backlogs y sprints.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h4 class="serif-font text-gold mb-3">Sistemas & Análisis</h4>
+                            <p class="text-secondary fw-light">VS Code, Microsoft Excel, bases de redes e infraestructura básica.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <hr class="border-secondary my-4">
-            <p class="small text-muted mb-0">&copy; 2026 Tu Nombre. Desarrollado con Bootstrap 5.</p>
+        </div>
+    </section>
+
+    <!-- FOOTER / CONTACTO -->
+    <footer id="contacto" class="py-5 mt-5 border-top border-secondary border-opacity-10">
+        <div class="container text-center py-4">
+            <h2 class="display-5 serif-font mb-3">¿Conectamos?</h2>
+            <p class="text-secondary fw-light mb-4" style="max-width: 500px; margin: 0 auto;">
+                Abierta a nuevas oportunidades en desarrollo de software, gestión de proyectos y proyectos tecnológicos.
+            </p>
+            <div class="d-flex justify-content-center gap-4 mb-5">
+                <a href="mailto:tu-email@correo.com" class="text-gold text-decoration-none"><i class="bi bi-envelope me-2"></i>Email</a>
+                <a href="https://linkedin.com/in/tu-perfil" target="_blank" class="text-gold text-decoration-none"><i class="bi bi-linkedin me-2"></i>LinkedIn</a>
+                <a href="https://github.com/tu-usuario" target="_blank" class="text-gold text-decoration-none"><i class="bi bi-github me-2"></i>GitHub</a>
+            </div>
+            <p class="small text-secondary opacity-50 mb-0">&copy; © Copyright Zuly. All rights reserved</p>
         </div>
     </footer>
 
     <!-- Bootstrap JS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Archivo JS externo -->
     <script src="js/main.js"></script>
 </body>
 </html>
