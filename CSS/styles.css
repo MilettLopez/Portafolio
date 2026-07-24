@@ -112,3 +112,19 @@ h1, h2, h3, .serif-font {
 footer {
     background-color: #e5dac1;
 }
+/* --- Ajustes de Scroll y Hero Centrado --- */
+html {
+    scroll-behavior: smooth;
+}
+
+.min-vh-100 {
+    min-height: calc(100vh - 80px);
+}
+
+.tracking-wide {
+    letter-spacing: 0.15em;
+}
+
+.text-accent {
+    color: var(--accent-main) !important;
+}
