@@ -1,25 +1,104 @@
 
-        /* Estilos personalizados para toques estéticos */
+        :root {
+            --bg-main: #0d0f12;
+            --bg-surface: #16191e;
+            --accent-gold: #d4af37;
+            --accent-gold-hover: #f3e5ab;
+            --text-primary: #f8f9fa;
+            --text-secondary: #94a3b8;
+            --border-color: rgba(212, 175, 55, 0.15);
+        }
+
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f8f9fa;
+            background-color: var(--bg-main);
+            color: var(--text-primary);
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            letter-spacing: 0.02em;
         }
+
+        h1, h2, h3, .serif-font {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .text-gold {
+            color: var(--accent-gold);
+        }
+
+        .navbar {
+            background-color: rgba(13, 15, 18, 0.85);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .nav-link {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: var(--accent-gold);
+        }
+
         .hero-section {
-            padding: 100px 0 80px 0;
-            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
-            color: white;
+            padding: 140px 0 100px 0;
         }
-        .badge-tech {
-            background-color: #e2e8f0;
-            color: #334155;
-            font-weight: 500;
+
+        .fancy-badge {
+            display: inline-block;
+            border: 1px solid var(--accent-gold);
+            color: var(--accent-gold);
+            padding: 6px 16px;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
         }
-        .card-project {
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-            border: none;
+
+        .project-card {
+            background-color: var(--bg-surface);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 2.5rem;
+            transition: all 0.4s ease;
         }
-        .card-project:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+
+        .project-card:hover {
+            border-color: var(--accent-gold);
+            transform: translateY(-6px);
+            box-shadow: 0 12px 30px rgba(212, 175, 55, 0.08);
         }
- 
+
+        .tech-tag {
+            font-size: 0.75rem;
+            letter-spacing: 0.05em;
+            color: var(--text-secondary);
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            padding-bottom: 2px;
+            margin-right: 12px;
+        }
+
+        .btn-gold {
+            background-color: transparent;
+            color: var(--accent-gold);
+            border: 1px solid var(--accent-gold);
+            padding: 10px 24px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 0.1em;
+        }
+
+        .btn-gold:hover {
+            background-color: var(--accent-gold);
+            color: var(--bg-main);
+        }
+
+        .divider-line {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--border-color), transparent);
+            margin: 4rem 0;
+        }
