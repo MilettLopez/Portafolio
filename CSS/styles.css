@@ -130,11 +130,24 @@ html {
     color: var(--accent-main) !important;
 }
 
-/* --- Foto de fondo centrada y desvanecida --- */
-.hero-with-bg {
+/* --- Foto de perfil a la derecha --- */
+.hero-img-wrapper {
     position: relative;
-    z-index: 1;
-    overflow: hidden;
+    display: inline-block;
+}
+
+.hero-profile-img {
+    max-height: 420px;
+    width: auto;
+    object-fit: cover;
+    border-radius: 20px; 
+    border: 2px solid var(--border-color); 
+    box-shadow: 0 15px 35px rgba(56, 102, 65, 0.15); 
+    transition: transform 0.4s ease;
+}
+
+.hero-profile-img:hover {
+    transform: translateY(-5px);
 }
 
 .hero-with-bg::before {
