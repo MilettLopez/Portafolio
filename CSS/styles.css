@@ -219,3 +219,35 @@ html {
 .btn-link-custom:hover {
     color: var(--accent-pop);
 }
+/* --- Enlaces y Botón GitHub en Proyectos --- */
+.btn-link-custom {
+    color: var(--text-primary);
+    font-weight: 600;
+    font-size: 0.85rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-link-custom:hover {
+    color: var(--accent-pop);
+}
+
+.btn-github-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: rgba(56, 102, 65, 0.08);
+    color: var(--text-primary);
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-github-icon:hover {
+    background-color: var(--accent-main);
+    color: #ffffff;
+    transform: scale(1.1);
+}
