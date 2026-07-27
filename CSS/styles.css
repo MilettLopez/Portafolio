@@ -177,3 +177,45 @@ html {
     position: relative;
     z-index: 2;
 }
+/* --- Badges de estado de proyectos --- */
+.badge-status {
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* Hackathon */
+.status-completed {
+    background-color: rgba(106, 153, 78, 0.2);
+    color: var(--text-primary);
+    border: 1px solid var(--accent-main);
+}
+
+/* En desarrollo */
+.status-progress {
+    background-color: rgba(188, 71, 73, 0.15);
+    color: var(--accent-pop);
+    border: 1px solid var(--accent-pop);
+}
+
+/* Próximamente */
+.status-upcoming {
+    background-color: rgba(74, 93, 78, 0.1);
+    color: var(--text-secondary);
+    border: 1px solid var(--border-color);
+}
+
+.btn-link-custom {
+    color: var(--text-primary);
+    font-weight: 600;
+    font-size: 0.85rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.btn-link-custom:hover {
+    color: var(--accent-pop);
+}
