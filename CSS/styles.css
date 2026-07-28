@@ -8,6 +8,32 @@
     --text-secondary: #4a5d4e;    /* Verde neutro suave para descripciones */
     --border-color: rgba(56, 102, 65, 0.2);
 }
+/* Desplazamiento suave entre secciones */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px; 
+}
+/* --- Botón Secundario de Delineado --- */
+.btn-outline-custom {
+    background-color: transparent;
+    color: var(--text-primary);
+    border: 1px solid var(--accent-main);
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+}
+
+.btn-outline-custom:hover {
+    background-color: var(--accent-main);
+    color: #ffffff;
+}
+
+/* Fondo de superficie suave */
+.bg-surface {
+    background-color: var(--bg-surface);
+}
 
 body {
     background-color: var(--bg-main);
