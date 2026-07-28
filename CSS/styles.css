@@ -279,8 +279,17 @@ html {
 }
 
 .navbar-brand {
-    color: var(--text-primary) !important;
-    font-weight: 700;
+    font-family: 'Playfair Display', Georgia, serif; 
+    color: var(--accent-main) !important;            
+    font-size: 1.8rem;                               
+    font-weight: 400;                                
+    letter-spacing: 0.02em;
+    transition: opacity 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: var(--accent-main) !important;
+    opacity: 0.85;
 }
 
 /* --- Título dentro de la tarjeta del Blog --- */
