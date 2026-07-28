@@ -21,85 +21,94 @@
 </head>
 <body>
 
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg fixed-top py-3">
-        <div class="container">
-            <a class="navbar-brand serif-font text-gold fs-4" href="#">Zuly</a>
-            <button class="navbar-toggler border-0 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <i class="bi bi-list fs-2 text-gold"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto gap-3">
-                    <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre mí</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Habilidades</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+   <!-- NAV BAR -->
+<nav class="navbar navbar-expand-lg sticky-top bg-surface border-bottom">
+    <div class="container">
+        <!-- Logo / Nombre -->
+        <a class="navbar-brand fw-bold" href="#inicio">
+            Zuly <span class="text-accent">.</span>
+        </a>
 
-    <!-- HERO SECTION -->
-    <!-- SECCIÓN 1: HERO / BIENVENIDA -->
-<section id="inicio" class="hero-section d-flex align-items-center min-vh-100">
+        <!-- Botón Hamburguesa para Móviles -->
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto gap-lg-3 text-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="#inicio">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portafolio">Portafolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#acerca-de-mi">Acerca de mí</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#cv">CV</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#blog">Blog</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- PÁGINA DE INICIO + CONTACTO DENTRO DEL HERO -->
+<section id="inicio" class="hero-section d-flex align-items-center min-vh-100 py-5">
     <div class="container">
         <div class="row align-items-center g-5">
-            
-            <!-- Columna Izquierda: Texto y Botón -->
+            <!-- Columna Izquierda: Presentación y Contacto Directo -->
             <div class="col-lg-7 text-center text-lg-start">
+                <span class="fancy-badge mb-3">Software & Tech Developer</span>
                 <h1 class="display-2 fw-normal mb-3 fst-italic">¡Hola! Soy Milett López</h1>
-                <p class="fancy-badge mb-4">Software & Tech Developer</p>
-                <div>
-                    <a href="#sobre-mi" class="btn btn-gold px-4 py-3">Conoce más sobre mí</a>
+                <p class="text-secondary lead mb-4">
+                    Apasionada por la tecnología, el desarrollo de software y la resolución de problemas mediante código.
+                </p>
+
+                <!-- Información de Contacto -->
+                <div class="contact-info-hero p-3 rounded-3 mb-4 bg-surface border">
+                    <h2 class="h6 text-uppercase tracking-wide text-accent fw-bold mb-2">Contacto</h2>
+                    <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start align-items-center small">
+                        <a href="mailto:zuleyka.milett.lopez@gmail.com" class="text-gold text-decoration-none"><i class="bi bi-envelope me-2"></i>Email</a>
+                        <a href="https://www.linkedin.com/in/zuleyka-velazquez-lopez-2641aa214" target="_blank" class="text-gold text-decoration-none"><i class="bi bi-linkedin me-2"></i>LinkedIn</a>
+                        <a href="https://github.com/MilettLopez" target="_blank" class="text-gold text-decoration-none"><i class="bi bi-github me-2"></i>GitHub</a>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
+                    <a href="#portafolio" class="btn btn-gold px-4 py-2">Ver Portafolio</a>
+                    <a href="./assets/Zuleyka_Milett_Velázquez _López.pdf" download class="btn btn-gold btn-lg px-4 py-3 shadow-sm">
+                       <i class="bi bi-file-earmark-pdf-fill me-2"></i>Descargar Curriculum en PDF
+                    </a>
                 </div>
             </div>
 
-            <!-- Columna Derecha:Foto -->
+            <!-- Columna Derecha: Foto -->
             <div class="col-lg-5 text-center">
                 <div class="hero-img-wrapper">
                     <img src="./assets/foto-perfil.jpeg" alt="Milett López" class="img-fluid hero-profile-img">
                 </div>
             </div>
-
         </div>
     </div>
 </section>
 
-<!-- SECCIÓN 2: SOBRE MÍ -->
-<section id="sobre-mi" class="py-5">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-10">
-                <span class="text-uppercase tracking-wide fw-bold text-accent small">Sobre Mí</span>
-                <h2 class="display-5 fw-normal my-3">
-                    Creando soluciones integrales con un enfoque <span class="fst-italic" style="color: var(--accent-pop);">analítico</span> y funcional.
-                </h2>
-                <p class="lead mt-4" style="color: var(--text-secondary); line-height: 1.8;">
-                    Desarrolladora apasionada por la resolución de problemas y la creación de soluciones tecnológicas integrales. Cuento con experiencia en 
-                    maquetación e interfaces web (HTML, Bootstrap, JavaScript), lógica de programación en Java y gestión de proyectos bajo metodologías ágiles en Jira. 
-                    Me motiva comprender el ciclo de vida del software en su totalidad, desde la experiencia de usuario hasta la organización técnica y el control de versiones con Git.
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
+<div class="divider-line"></div>
 
-<div class="container">
-    <div class="divider-line"></div>
-</div>
-
- <!-- SECCIÓN PROYECTOS -->
-<section id="proyectos" class="py-5">
+<!-- PORTAFOLIO -->
+<section id="portafolio" class="py-5">
     <div class="container">
         <div class="text-center mb-5">
-            <span class="text-uppercase tracking-wide fw-bold text-accent small">Portafolio</span>
-            <h2 class="display-5 fw-normal my-2">Proyectos & Prácticas</h2>
-            <p class="text-secondary">Una muestra de mis proyectos prácticos, hackathons y desarrollos integrales.</p>
+            <span class="text-uppercase tracking-wide fw-bold text-accent small">Mis Trabajos</span>
+            <h2 class="display-5 fw-normal my-2">Portafolio</h2>
+            <p class="text-secondary">Proyectos desarrollados, prácticas e integraciones.</p>
         </div>
 
         <div class="row g-4">
-            
-            <!--Proyecto Frontend - Hackathon -->
+            <!-- Proyecto Frontend -->
             <div class="col-lg-6">
                 <div class="project-card h-100 d-flex flex-column justify-content-between">
                     <div>
@@ -108,25 +117,16 @@
                             <span class="badge-status status-completed">Hackathon</span>
                         </div>
                         <h3 class="h4 mb-3">Proyecto Frontend</h3>
-                        <p class="text-secondary small">
-                            Desarrollo de interfaz web enfocado en la experiencia de usuario, maquetación adaptativa e integración visual limpia.
-                        </p>
+                        <p class="text-secondary small">Desarrollo de interfaz web enfocado en UX/UI, maquetación adaptativa e integración visual.</p>
                     </div>
-                    <div>
-                        <span class="small text-muted d-block mb-3">HTML • CSS • JS • Bootstrap</span>
-                        <div class="pt-3 border-top border-light-subtle d-flex justify-content-between align-items-center">
-                            <a href="#" target="_blank" rel="noopener noreferrer" class="btn-link-custom">
-                                Ver Proyecto <i class="bi bi-arrow-up-right"></i>
-                            </a>
-                            <a href="https://github.com/ericperucho12-netizen/landing_basquetbol.git" target="_blank" rel="noopener noreferrer" class="btn-github-icon" title="Ver repositorio en GitHub">
-                                <i class="bi bi-github"></i>
-                            </a>
-                        </div>
+                    <div class="pt-3 border-top border-light-subtle d-flex justify-content-between align-items-center">
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="btn-link-custom">Ver Proyecto <i class="bi bi-arrow-up-right"></i></a>
+                        <a href="https://github.com/ericperucho12-netizen/landing_basquetbol.git" target="_blank" rel="noopener noreferrer" class="btn-github-icon" title="GitHub"><i class="bi bi-github"></i></a>
                     </div>
                 </div>
             </div>
 
-            <!-- Proyecto de APIs - Desarrollo -->
+            <!--Proyecto APIs -->
             <div class="col-lg-6">
                 <div class="project-card h-100 d-flex flex-column justify-content-between">
                     <div>
@@ -135,25 +135,16 @@
                             <span class="badge-status status-progress">En desarrollo</span>
                         </div>
                         <h3 class="h4 mb-3">Proyecto de APIs</h3>
-                        <p class="text-secondary small">
-                            Consumo e integración de servicios API REST para la manipulación y despliegue de datos dinámicos en tiempo real.
-                        </p>
+                        <p class="text-secondary small">Consumo e integración de servicios API REST para la manipulación de datos dinámicos.</p>
                     </div>
-                    <div>
-                        <span class="small text-muted d-block mb-3">JavaScript • Fetch API • JSON</span>
-                        <div class="pt-3 border-top border-light-subtle d-flex justify-content-between align-items-center">
-                            <a href="#" target="_blank" rel="noopener noreferrer" class="btn-link-custom">
-                                Ver Avances <i class="bi bi-arrow-up-right"></i>
-                            </a>
-                            <a href="#" target="_blank" rel="noopener noreferrer" class="btn-github-icon" title="Ver repositorio en GitHub">
-                                <i class="bi bi-github"></i>
-                            </a>
-                        </div>
+                    <div class="pt-3 border-top border-light-subtle d-flex justify-content-between align-items-center">
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="btn-link-custom">Ver Avances <i class="bi bi-arrow-up-right"></i></a>
+                        <a href="https://github.com/TU-USUARIO/TU-REPO" target="_blank" rel="noopener noreferrer" class="btn-github-icon" title="GitHub"><i class="bi bi-github"></i></a>
                     </div>
                 </div>
             </div>
 
-            <!-- Proyecto Backend - Hackathon 2 - Próximamente -->
+            <!--Backend Hackathon 2 -->
             <div class="col-md-4">
                 <div class="project-card h-100 d-flex flex-column justify-content-between">
                     <div>
@@ -161,23 +152,17 @@
                             <span class="tech-tag">BACKEND</span>
                             <span class="badge-status status-upcoming">Próximamente</span>
                         </div>
-                        <h3 class="h5 mb-3">Proyecto Backend</h3>
-                        <p class="text-secondary small">
-                            Desarrollo de lógica de negocio, arquitectura de servidor y manejo de peticiones para la segunda edición de Hackathon.
-                        </p>
+                        <h3 class="h5 mb-3">Proyecto Backend - Hackathon 2</h3>
+                        <p class="text-secondary small">Desarrollo de lógica de negocio y arquitectura de servidor.</p>
                     </div>
-                    <div>
-                        <span class="small text-muted d-block mb-3">Hackathon 2</span>
-                        <div class="pt-3 border-top border-light-subtle d-flex justify-content-between align-items-center">
-                            <a href="#" target="_blank" rel="noopener noreferrer" class="btn-github-icon" title="Ver repositorio en GitHub">
-                                <i class="bi bi-github"></i>
-                            </a>
-                        </div>
+                    <div class="pt-3 border-top border-light-subtle d-flex justify-content-between align-items-center">
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="btn-link-custom">Ver Repositorio <i class="bi bi-arrow-up-right"></i></a>
+                        <a href="https://github.com/TU-USUARIO/TU-REPO" target="_blank" rel="noopener noreferrer" class="btn-github-icon" title="GitHub"><i class="bi bi-github"></i></a>
                     </div>
                 </div>
             </div>
 
-            <!-- Proyecto Integrador - En desarrollo -->
+            <!--Proyecto Integrador -->
             <div class="col-md-4">
                 <div class="project-card h-100 d-flex flex-column justify-content-between">
                     <div>
@@ -186,25 +171,16 @@
                             <span class="badge-status status-progress">En desarrollo</span>
                         </div>
                         <h3 class="h5 mb-3">Proyecto Integrador</h3>
-                        <p class="text-secondary small">
-                            Solución tecnológica completa que conecta frontend, backend y lógica de programación para resolver un problema real.
-                        </p>
+                        <p class="text-secondary small">Solución tecnológica completa conectando frontend, backend y base de datos.</p>
                     </div>
-                    <div>
-                        <span class="small text-muted d-block mb-3">Java • Web • Metodología Ágil</span>
-                        <div class="pt-3 border-top border-light-subtle d-flex justify-content-between align-items-center">
-                            <a href="#" target="_blank" rel="noopener noreferrer" class="btn-link-custom">
-                                Ver Avances <i class="bi bi-arrow-up-right"></i>
-                            </a>
-                            <a href="https://github.com/ericperucho12-netizen/Marcando-Huellitas.git" target="_blank" rel="noopener noreferrer" class="btn-github-icon" title="Ver repositorio en GitHub">
-                                <i class="bi bi-github"></i>
-                            </a>
-                        </div>
+                    <div class="pt-3 border-top border-light-subtle d-flex justify-content-between align-items-center">
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="btn-link-custom">Ver Avances <i class="bi bi-arrow-up-right"></i></a>
+                        <a href="https://github.com/ericperucho12-netizen/Marcando-Huellitas.git" target="_blank" rel="noopener noreferrer" class="btn-github-icon" title="GitHub"><i class="bi bi-github"></i></a>
                     </div>
                 </div>
             </div>
 
-            <!-- Proyecto Base de Datos - Próximamente -->
+            <!-- Proyecto Base de Datos -->
             <div class="col-md-4">
                 <div class="project-card h-100 d-flex flex-column justify-content-between">
                     <div>
@@ -213,56 +189,168 @@
                             <span class="badge-status status-upcoming">Próximamente</span>
                         </div>
                         <h3 class="h5 mb-3">Proyecto Base de Datos</h3>
-                        <p class="text-secondary small">
-                            Diseño de modelos relacionales, normalización y consultas optimizadas para la gestión persistente de la información.
-                        </p>
+                        <p class="text-secondary small">Diseño de modelos relacionales, consultas SQL y normalización.</p>
                     </div>
-                    <div>
-                        <span class="small text-muted d-block mb-3">SQL • Modelado E/R</span>
-                        <div class="pt-3 border-top border-light-subtle d-flex justify-content-between align-items-center">
-                            <a href="#" target="_blank" rel="noopener noreferrer" class="btn-github-icon" title="Ver repositorio en GitHub">
-                                <i class="bi bi-github"></i>
-                            </a>
-                        </div>
+                    <div class="pt-3 border-top border-light-subtle d-flex justify-content-between align-items-center">
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="btn-link-custom">Ver Repositorio <i class="bi bi-arrow-up-right"></i></a>
+                        <a href="https://github.com/TU-USUARIO/TU-REPO" target="_blank" rel="noopener noreferrer" class="btn-github-icon" title="GitHub"><i class="bi bi-github"></i></a>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="divider-line"></div>
+
+<!-- ACERCA DE MÍ -->
+<section id="acerca-de-mi" class="py-5">
+    <div class="container py-4">
+        <div class="row align-items-center g-5">
+            
+            <!-- Columna Izquierda: Texto Principal -->
+            <div class="col-lg-7">
+                <!-- Subtítulo pequeño verde oliva -->
+                <span class="text-uppercase tracking-wide fw-bold text-accent small d-block mb-3">Sobre mí</span>
+                
+                <!-- Título Serif Grande -->
+                <h2 class="display-5 serif-font fw-normal mb-4" style="color: var(--text-primary); line-height: 1.2;">
+                    Creando soluciones integrales con un enfoque 
+                    <span class="fst-italic" style="color: var(--accent-pop);">analítico</span> y funcional.
+                </h2>
+                
+                <!-- Párrafo descriptivo -->
+                <p class="fs-6 fw-normal leading-relaxed mb-0" style="color: var(--text-secondary); line-height: 1.7;">
+                    Desarrolladora apasionada por la resolución de problemas y la creación de soluciones tecnológicas integrales. Cuento con experiencia en maquetación e interfaces web (HTML, Bootstrap, JavaScript), lógica de programación en Java y gestión de proyectos bajo metodologías ágiles en Jira. Me motiva comprender el ciclo de vida del software en su totalidad, desde la experiencia de usuario hasta la organización técnica y el control de versiones con Git.
+                </p>
+            </div>
+
+            <!-- Columna Derecha: Tarjeta Mis Principios -->
+            <div class="col-lg-5">
+                <div class="p-4 rounded-3 border bg-surface shadow-sm">
+                    <h3 class="h5 mb-3" style="color: var(--text-primary);"><i class="bi bi-stars text-accent me-2"></i>Mis Principios</h3>
+                    <ul class="list-unstyled mb-0 d-grid gap-3 small" style="color: var(--text-secondary);">
+                        <li class="d-flex align-items-start">
+                            <i class="bi bi-check2-circle text-accent me-2 mt-1"></i>
+                            <span><strong>Pasión por el detalle:</strong> Separación clara de responsabilidades en el código.</span>
+                        </li>
+                        <li class="d-flex align-items-start">
+                            <i class="bi bi-check2-circle text-accent me-2 mt-1"></i>
+                            <span><strong>Trabajo en equipo:</strong> Comunicación asertiva y gestión con herramientas ágiles.</span>
+                        </li>
+                        <li class="d-flex align-items-start">
+                            <i class="bi bi-check2-circle text-accent me-2 mt-1"></i>
+                            <span><strong>Aprendizaje constante:</strong> Adaptación rápida a nuevos frameworks y tecnologías.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div> 
+    </div> 
+</section>
+
+<div class="divider-line"></div>
+
+<!-- SECCIÓN DE CV + DESCARGA DE PDF + HABILIDADES -->
+<section id="cv" class="py-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            <span class="text-uppercase tracking-wide fw-bold text-accent small">Trayectoria & Skillset</span>
+            <h2 class="display-5 fw-normal my-2">Curriculum Vitae</h2>
+            <p class="text-secondary">Resumen de mi perfil profesional, logros académicos y habilidades técnicas.</p>
+            
+            <!-- BOTÓN DESTACADO PARA DESCARGAR CV EN PDF -->
+            <div class="mt-4">
+                <a href="./assets/CV_Milett_Lopez.pdf" download class="btn btn-gold btn-lg px-4 py-3 shadow-sm">
+                    <i class="bi bi-file-earmark-pdf-fill me-2"></i>Descargar Curriculum en PDF
+                </a>
+            </div>
+        </div>
+
+        <div class="row g-4 mt-2">
+            <!-- Habilidades Técnicas -->
+            <div class="col-md-6">
+                <div class="p-4 border rounded-3 bg-surface h-100">
+                    <h3 class="h5 mb-3"><i class="bi bi-code-slash text-accent me-2"></i>Habilidades Técnicas</h3>
+                    <div class="d-flex flex-wrap gap-2">
+                        <span class="badge bg-light text-dark border">HTML5 & CSS3</span>
+                        <span class="badge bg-light text-dark border">JavaScript</span>
+                        <span class="badge bg-light text-dark border">Bootstrap</span>
+                        <span class="badge bg-light text-dark border">Java</span>
+                        <span class="badge bg-light text-dark border">Git & GitHub</span>
+                        <span class="badge bg-light text-dark border">SQL</span>
+                        <span class="badge bg-light text-dark border">Cisco Packet Tracer</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Logros Académicos y Blandas -->
+            <div class="col-md-6">
+                <div class="p-4 border rounded-3 bg-surface h-100">
+                    <h3 class="h5 mb-3"><i class="bi bi-trophy text-accent me-2"></i>Logros & Metodologías</h3>
+                    <ul class="text-secondary small mb-0 ps-3">
+                        <li class="mb-2">Participación en Hackathons de Desarrollo Web y Backend.</li>
+                        <li class="mb-2">Gestión de proyectos con metodología SCRUM y Jira.</li>
+                        <li class="mb-2">Despliegue de proyectos web mediante GitHub Pages.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="divider-line"></div>
+
+<!-- SECCIÓN BLOG / REFLEXIÓN -->
+<section id="blog" class="py-5 bg-surface border-top border-bottom">
+    <div class="container">
+        
+        <!-- Encabezado de la Sección -->
+        <div class="text-center mb-5">
+            <h2 class="display-5 fw-bold text-gradient">Reflexión & Aprendizajes</h2>
+            <p class="text-muted lead">Mi experiencia y evolución durante el desarrollo de este proyecto</p>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+            
+            <!--Retos y Aprendizajes-->
+            <div class="col-lg-10">
+                <article class="card bg-background border p-4 p-md-5 rounded-4 shadow-sm mb-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <span class="badge bg-gold text-dark px-3 py-2 rounded-pill fw-bold">Reflexión Técnica</span>
+                        <small class="text-muted ms-auto"><i class="bi bi-calendar3 me-1"></i> Julio 2026</small>
+                    </div>
+                    
+                    <h3 class="h2 fw-bold text-light mb-4">Transformando código en una identidad profesional</h3>
+
+                    <div class="blog-content text-muted lh-lg">
+                        <p class="mb-4">
+                            El desarrollo de este portafolio web representó un reto técnico significativo que fue más allá de escribir código HTML y CSS; significó estructurar mi experiencia y visión como desarrolladora de software en un producto interactivo y funcional.
+                        </p>
+
+                        <h4 class="h5 fw-bold text-accent mt-4 mb-3"><i class="bi bi-check-circle-fill me-2"></i>Principales Retos Técnicos</h4>
+                        <p class="mb-3">
+                            Uno de los desafíos principales consistió en mantener un estándar estricto de <strong>separación de conceptos</strong>. Trabajar con componentes de Bootstrap 5 exigió modularizar los estilos de manera limpia dentro de una hoja CSS externa independiente, asegurando un diseño visualmente atractivo, minimalista y libre de estilos en línea redundantes.
+                        </p>
+                        <p class="mb-4">
+                            Asimismo, la maquetación responsiva mediante el sistema de rejilla (Grid) y utilidades de Flexbox me permitió optimizar la adaptabilidad para múltiples dispositivos, cuidando la navegación móvil y asegurando que la jerarquía visual fuera consistente tanto en pantallas grandes como pequeñas.
+                        </p>
+
+                        <h4 class="h5 fw-bold text-accent mt-4 mb-3"><i class="bi bi-lightbulb-fill me-2"></i>Evolución y Lecciones Aprendidas</h4>
+                        <p class="mb-3">
+                            A través del desarrollo de este y proyectos anteriores como la implementación de metodologías ágiles en equipos SCRUM o el diseño de arquitecturas de software— reafirmé la importancia de la planificación antes de la codificación. La creación de arquitecturas limpias y la adopción de buenas prácticas en Git/GitHub facilita enormemente el despliegue continuo (como el uso de GitHub Pages).
+                        </p>
+                        <p class="mb-0">
+                            Este portafolio no solo actúa como carta de presentación, sino como un registro vivo de mi crecimiento continuo en tecnologías front-end, lógica de programación y resolución de problemas.
+                        </p>
+                    </div>
+                </article>
             </div>
 
         </div>
     </div>
 </section>
-
-    <!-- HABILIDADES -->
-    <section id="skills" class="py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 mb-4 mb-lg-0">
-                    <span class="text-gold text-uppercase tracking-wider small">Competencias</span>
-                    <h2 class="display-6 fw-normal mt-2">Tecnologías & Herramientas</h2>
-                </div>
-                <div class="col-lg-8">
-                    <div class="row g-4">
-                        <div class="col-md-6">
-                            <h4 class="serif-font text-gold mb-3">Desarrollo Web & Lógica</h4>
-                            <p class="text-secondary fw-light">HTML, CSS, JavaScript, Bootstrap, Java (POO & lógica).</p>
-                        </div>
-                        <div class="col-md-6">
-                            <h4 class="serif-font text-gold mb-3">Control de Versiones</h4>
-                            <p class="text-secondary fw-light">Git, GitHub, GitHub Pages, gestión de ramas y repositorios.</p>
-                        </div>
-                        <div class="col-md-6">
-                            <h4 class="serif-font text-gold mb-3">Gestión de Proyectos & Ágil</h4>
-                            <p class="text-secondary fw-light">Jira (Scrum/Agile), gestión de historias de usuario, backlogs y sprints.</p>
-                        </div>
-                        <div class="col-md-6">
-                            <h4 class="serif-font text-gold mb-3">Sistemas & Análisis</h4>
-                            <p class="text-secondary fw-light">VS Code, IntelliJ, Microsoft Excel, bases de redes e infraestructura básica.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- FOOTER / CONTACTO -->
     <footer id="contacto" class="py-5 mt-5 border-top border-secondary border-opacity-10">
