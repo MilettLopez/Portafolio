@@ -277,3 +277,23 @@ html {
     color: #ffffff;
     transform: scale(1.1);
 }
+
+.navbar-brand {
+    color: var(--text-primary) !important;
+    font-weight: 700;
+}
+
+/* --- Título dentro de la tarjeta del Blog --- */
+.card h3, 
+.blog-content h3 {
+    color: var(--text-primary) !important; 
+    font-weight: 700;
+}
+
+.blog-content h4 {
+    color: var(--accent-main) !important;
+}
+
+.blog-content p {
+    color: var(--text-secondary) !important; 
+}
